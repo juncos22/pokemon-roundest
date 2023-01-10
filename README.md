@@ -6,7 +6,7 @@ First, run the development server:
 npm run dev
 ```
 ## TODO
-- [] Persist data fetched from PokemonAPI
-- [] Create the results page with counting/sorting
-- [] Use next/image to handle image caching and better rendering
-- [] Maybe move images to bulbapedia
+- [x] Persist data fetched from PokemonAPI
+- [x] Create the results page with counting/sorting
+- [x] Use next/image to handle image caching and better rendering
+- []  Better loading state between votes
