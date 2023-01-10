@@ -3,6 +3,7 @@ import { trpc } from "@/utils/trpc"
 import { useMemo, useState } from "react"
 import { inferQueryResponse } from "./api/trpc/[trpc]"
 import Image from "next/image"
+import Link from "next/link"
 
 const btnClass = "inline-flex items-center px-2.5 py-1.5 font-medium text-md rounded border m-auto border-gray-300 shadow-sm bg-white hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-gray-700"
 
@@ -56,6 +57,9 @@ export default function Home() {
               )
           }
           <div className="p-2" />
+        </div>
+        <div className="absolute bottom-0 w-full text-2xl text-center pb-2">
+          <Link href={'/results'}>View Results</Link>
         </div>
       </div>
     </>
