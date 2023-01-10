@@ -68,7 +68,7 @@ const PokemonListing: React.FC<{ pokemon: PokemonFromServer, vote: () => void }>
     <div className="w-64 h-64 flex flex-col mb-3">
       <Image
         width={100} height={100}
-        src={props.pokemon.sprites.front_default as string}
+        src={props.pokemon.spriteUrl}
         alt={props.pokemon.name} className="w-full" />
 
       <div className="text-xl text-center capitalize mt-[-2rem]">
