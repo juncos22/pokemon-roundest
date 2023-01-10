@@ -39,7 +39,7 @@ export default function Home() {
         <div className="border rounded p-8 flex justify-between max-w-2xl items-center">
           {
             firstPokemon.isLoading
-              ? 'Loading Pokemon...'
+              ? <span className="loader"></span>
               : (
                 <PokemonListing
                   pokemon={firstPokemon.data!}
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="p-8">Vs.</div>
           {
             secondPokemon.isLoading
-              ? 'Loading Pokemon...'
+              ? <span className="loader"></span>
               : (
                 <PokemonListing
                   pokemon={secondPokemon.data!}
